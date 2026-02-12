@@ -1,0 +1,23 @@
+<form method="post">
+
+<input name="colaborador" placeholder="Colaborador"><br>
+
+<select name="empresa">
+{% for e in empresas %}
+<option>{{e.nome}}</option>
+{% endfor %}
+</select><br>
+
+<select name="soc">
+<option>SOC</option>
+<option>Não SOC</option>
+</select><br>
+
+<input name="tipo" placeholder="Tipo exame"><br>
+<input name="exames" placeholder="Exames"><br>
+
+<input type="date" name="data"><br>
+<input type="time" name="hora"><br>
+
+<button>Salvar</button>
+</form>
